@@ -23,7 +23,7 @@ steps:
   displayName: 'Install Python 3.8'
 - script: pip install checkov
   displayName: 'Install Checkov'
-- script: checkov -d . --bc-api-key "d79d3402-38e6-422b-91f4-1f96ae1097fe::12WjtDDXe07mCAFNVEqFvg/H6vY=" --repo-id "DayoSE/supplygoat" --soft-fail
+- script: checkov -d . --bc-api-key "d79d3402-38e6-422b-91f4-1f96ae1097fe::12WjtDDXe07mCAFNVEqFvg/H6vY=" --repo-id "DayoSE/supplygoat" 
   displayName: 'Scan with Prisma Cloud'
   env:
     PRISMA_API_URL: 'https://api.prismacloud.io'
